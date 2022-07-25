@@ -23,9 +23,9 @@ const Counter = () => {
       <h2>Counter App</h2>
 
       <h3>Count : {count} </h3>
-      <button onClick={handleIncrement}>Increment</button>
-      <button onClick={handleDecrement}>Decriment</button>
-      <button onClick={handleReset}>Reset</button>
+      <button style={{margin: "0 10px"}} onClick={handleIncrement}>Increment</button>
+      <button style={{margin: "0 10px"}} onClick={handleDecrement}>Decriment</button>
+      <button style={{margin: "0 10px"}} onClick={handleReset}>Reset</button>
     </div>
   );
 };
