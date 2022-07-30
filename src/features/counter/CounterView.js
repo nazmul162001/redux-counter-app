@@ -21,7 +21,7 @@ const CounterView = () => {
 
   return (
     <div>
-      <input onChange={handleChange} type="text" name="" id="" />
+      <input style={{padding: "10px"}} onChange={handleChange} type="text" name="" id="" placeholder='Enter Custom Value' />
       <h2>count: {count} </h2>
       <button
         style={{margin: "0 10px"}}
@@ -29,7 +29,7 @@ const CounterView = () => {
           dispatch(increment());
         }}
       >
-        Increment
+        IncrementBy1
       </button>
       <button
         style={{margin: "0 10px"}}
@@ -37,15 +37,7 @@ const CounterView = () => {
           dispatch(decrement());
         }}
       >
-        Decrement
-      </button>
-      <button
-        style={{margin: "0 10px"}}
-        onClick={() => {
-          dispatch(reset());
-        }}
-      >
-        Reset
+        DecrementBy1
       </button>
       <button
         style={{margin: "0 10px"}}
@@ -62,6 +54,14 @@ const CounterView = () => {
         }}
       >
         Custom Decrement
+      </button>
+      <button
+        style={{margin: "0 10px"}}
+        onClick={() => {
+          dispatch(reset());
+        }}
+      >
+        Reset
       </button>
     </div>
   );
