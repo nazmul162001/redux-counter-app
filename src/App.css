@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+section{
+  width: 100%;
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 2rem;
+}
+article{
+  background-color: rgba(114, 109, 66, 0.979);
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

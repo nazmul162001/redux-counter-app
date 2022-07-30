@@ -13,19 +13,20 @@ const PostView = () => {
 
   return (
     <div>
+      <h3>Fetch data using Redux Async function</h3>
       {isLoading && <h2>Loading...</h2>}
       {error && <h2>{error} </h2>}
-      {posts &&
-        posts.map((post) => {
-          return (
-            <section>
+      <section>
+        {posts &&
+          posts.map((post) => {
+            return (
               <article>
                 <h5>{post.title}</h5>
                 <p>{post.body}</p>
               </article>
-            </section>
-          );
-        })}
+            );
+          })}
+      </section>
     </div>
   );
 };
